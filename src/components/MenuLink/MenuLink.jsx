@@ -1,12 +1,19 @@
 import "./MenuLink.css";
-function MenuLink() {
+import PropTypes from "prop-types";
+
+function MenuLink(props) {
   return (
-    <div>
-      <div id="nav">
-        <p>Nav Content</p>
-      </div>
-    </div>
+    <>
+      <a href={props.url} className="link">
+        {props.linkname}
+      </a>
+    </>
   );
 }
+
+MenuLink.propTypes = {
+  url: PropTypes.string.isRequired,
+  linkname: PropTypes.string.isRequired,
+};
 
 export default MenuLink;

@@ -1,12 +1,12 @@
 import BodyContent from "./components/BodyContent/BodyContent";
 import FooterContent from "./components/FooterContent/FooterContent";
-import MenuLink from "./components/MenuLink/MenuLink";
+import HeaderContent from "./components/HeaderContent/HeaderContent";
 
 function App() {
   return (
     <>
       <div>
-        <MenuLink />
+        <HeaderContent />
         <BodyContent />
         <FooterContent />
       </div>
